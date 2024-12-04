@@ -1,0 +1,258 @@
+/* Reset Css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+}
+
+/* Main Css*/
+
+.light-theme {
+    --background-color: #faebdd;
+    --background-logo: #1a0000;
+    --color-logo: #fff;
+    --color-menu: #000;
+    --text-color: #000;
+    --background-footer-icons: #1a0000;
+    --border-introduction:#000;
+    --background-menu:#fff3f369;
+}
+
+.dark-theme {
+    --background-color: #000;
+    --background-logo: #fff;
+    --color-logo: #000;
+    --color-menu: #fff;
+    --text-color:#fff;
+    --background-footer-icons:#fff;
+    --border-introduction:#fff;
+    --background-menu:#fff3f369;
+}
+
+html,
+body {
+    background: var(--background-color);
+}
+
+.main-container {
+    padding: 16px 16px 0 16px;
+}
+
+.home-page {
+    height: 100vh;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-logo-navbar {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--background-logo);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.home-logo-letter {
+    color: var(--color-logo);
+    font-weight: 200;
+}
+
+.home-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.items-home-menu{
+    position: absolute;
+    top: .5rem;
+    left: -7rem;
+    background-color: var(--background-menu);
+    width: 9.8rem;
+    height: 12rem;
+    padding: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.menu-link{
+    transition: all .5s;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.menu-link a{
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-link:hover{
+    transform: translate(2px, -4px);
+}
+
+.fa-bars {
+    font-size: 2rem;
+}
+
+.header-content {
+    margin-top: 10rem;
+}
+
+.header-phrase {
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.header-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-name {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+
+.header-about {
+    font-weight: 500;
+    text-align: center;
+}
+
+.introduction {
+    border-top: 1px solid var(--border-introduction);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Projects page estilization */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-page img {
+    width: 95vw;
+}
+
+.projects-page img:hover {
+    transform: scaleZ();
+}
+
+.description {
+    margin-top: 0.3rem;
+    font-weight: 600;
+}
+
+.projects-button {
+    padding: 1.5rem 0;
+    display: block;
+    color: #acacac;
+    text-decoration: none;
+}
+
+.projects-button::after {
+    content: " ►";
+}
+
+/* Contact page estilization */
+.contact-page {
+    height: 100vh;
+    position: relative;
+}
+
+#form {
+    margin-top: 2rem;
+    color: var(--text-color);
+    padding: 0.5rem 0;
+    border: 2px solid var(--border-introduction);
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: center;
+}
+
+label:nth-child(1){
+    margin-top: .3rem;
+}
+
+input, textarea {
+    align-self: center;
+    margin-bottom: 1.4rem;
+}
+
+.form-button{
+    padding: .4rem .7rem;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    border: 1px solid var(--border-introduction);
+    color: var(--text-color);
+}
+
+.footer{
+    border-top: 2px solid var(--border-introduction);
+    width: 100vw;
+    margin-left: -1rem;
+    padding-top: .3rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-icons{
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    width: inherit;
+    color: var(--text-color);
+
+}
+
+.footer-icons .fa-github{
+    margin-right: .4rem;
+}
+
+.footer-nav{
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    margin: 7rem 0;
+}
+
+.footer-links a{
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-color);
+}
+
+.made-by-footer{
+    width: inherit;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.fa-sun{
+    color: #fff;
+}

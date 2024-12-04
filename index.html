@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Font Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Saira -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Link to utilize the font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>DeveloperFolio</title>
+</head>
+
+<body class="light-theme">
+  <main class="main-container">
+    <header class="home-page">
+      <div class="navbar">
+        <div class="home-logo-navbar">
+          <h1 class="home-logo-letter">M</h1>
+        </div>
+        <div class="home-menu" id="home-menu"><i class="fa-solid fa-bars"></i>
+          <div class="items-home-menu" id="items-home-menu">
+            <h3 class="menu-link"><a href="#home">Home</a></h3>
+            <h3 class="menu-link"><a href="#project">Projects</a></h3>
+            <h3 class="menu-link"><a href="#contact">Contacts</a></h3>
+            <i class="fa-solid fa-circle-half-stroke" onclick="SwitchThemes()"></i>
+          </div>
+        </div>
+      </div>
+      <div class="header-content">
+        <div class="header-phrase">
+          <h1>Criative Solutions and Front-End Development</h1>
+        </div>
+        <div class="header-about-me">
+          <div class="header-name">
+            <h2>Marco Antônio</h2>
+          </div>
+          <div class="header-about">
+            <p>Hi, i am Marco Antônio, a Fascinated Junior Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="projects-page">
+      <h2 class="introduction">projects</h2>
+      <div class="projects-container">
+        <div class="project-01">
+          <a href="./assets/img/projPoke.png" target="_blank"><img src="./assets/img/newPoke.png" alt="" id="01" /></a>
+          <p class="description">
+            Pokedex, a tool developed for increase technic knowledge in
+            JavaScript
+          </p>
+          <a class="projects-button" href="https://marco-oliveira7.github.io/Pokedex/">View Project</a>
+        </div>
+        <div class="project-02">
+          <a href="./assets/img/projSpider.png" target="_blank"><img src="./assets/img/newSpiderMan.png" alt=""
+              id="02" /></a>
+          <p class="description">
+            Spider-man Multiverses, this website have great technics of Css,
+            and JavaScript
+          </p>
+          <a class="projects-button" href="https://marco-oliveira7.github.io/spider-man-multiverses/">View Project</a>
+        </div>
+        <div class="project-03">
+          <a href="./assets/img/projPage.png" target="_blank"><img src="./assets/img/newPage.png" alt="" id="03" /></a>
+          <p class="description">
+            Landing Page Inverted World, this Landing page is able to switch
+            the themes
+          </p>
+          <a class="projects-button" href="https://marco-oliveira7.github.io/Landing-Page-Mundo-Invertido/">View
+            Project</a>
+        </div>
+        <!-- <div class="project-04">
+            <img src="" alt="" id="04" />
+            <p>Descricao do projeto</p>
+          </div> -->
+      </div>
+    </section>
+    <section class="contact-page">
+      <h2 class="introduction" id="contact">contact</h2>
+      <form action="" id="form">
+        <div class="form-flex">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-flex">
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+        </div>
+        <div class="form-flex">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5" cols="25"></textarea>
+        </div>
+        <button type="submit" class="form-button">Submit</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-icons">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="footer-nav">
+        <h4 class="footer-links"><a href="#home">home</a></h4>
+        <h4 class="footer-links"><a href="#project">project</a></h4>
+        <h4 class="footer-links"><a href="#contact">contact</a></h4>
+      </div>
+      <h2 class="made-by-footer">Made by Marco-Oliveira7</h2>
+    </footer>
+  </main>
+  <script src="./assets/scripts/main.js" defer></script>
+</body>
+
+</html>
