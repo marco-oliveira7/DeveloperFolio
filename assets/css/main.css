@@ -22,8 +22,8 @@
 
 .dark-theme {
     --background-color: #000;
-    --background-logo: #fff;
-    --color-logo: #000;
+    --background-logo: #000;
+    --color-logo: #fff;
     --color-menu: #fff;
     --text-color:#fff;
     --background-footer-icons:#fff;
@@ -36,13 +36,12 @@ body {
     background: var(--background-color);
 }
 
-.main-container {
-    padding: 16px 16px 0 16px;
-}
 
 .home-page {
     height: 100vh;
     color: var(--text-color);
+    padding: 16px;
+    padding-bottom: 0px;
 }
 
 .navbar {
@@ -135,6 +134,12 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
+    color: var(--text-color);
+}
+
+.projects-page{
+    padding: 9px;
+    padding-bottom: 0px;
 }
 
 /* Projects page estilization */
@@ -154,6 +159,7 @@ body {
 .description {
     margin-top: 0.3rem;
     font-weight: 600;
+    color: var(--text-color);
 }
 
 .projects-button {
@@ -208,22 +214,35 @@ input, textarea {
     color: var(--text-color);
 }
 
+/* About page estilization */
+.about-page{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--text-color);
+}
+
+.about-page .about-text{
+    text-align: justify;
+}
+
 .footer{
     border-top: 2px solid var(--border-introduction);
-    width: 100vw;
+    width: 104vw;
     margin-left: -1rem;
     padding-top: .3rem;
     display: flex;
     flex-flow: row wrap;
+    height: 40vh;
 }
 
+/* Footer page estilization */
 .footer-icons{
     font-size: 2rem;
     display: flex;
     justify-content: flex-end;
     width: inherit;
     color: var(--text-color);
-
 }
 
 .footer-icons .fa-github{
@@ -233,8 +252,10 @@ input, textarea {
 .footer-nav{
     width: inherit;
     display: flex;
-    justify-content: space-around;
-    margin: 7rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
 }
 
 .footer-links a{
@@ -246,13 +267,13 @@ input, textarea {
 }
 
 .made-by-footer{
-    width: inherit;
-    font-weight: 550;
-    display: flex;
-    justify-content: center;
+    border-top: 1px solid var(--border-introduction);
+    width: 85vw;
+    height: 2rem;
+    font-weight: 400;
+    font-size: 1.1rem;
     color: var(--text-color);
-}
-
-.fa-sun{
-    color: #fff;
+    align-self: flex-end;
+    margin-left: 2.5rem;
+    text-align: center;
 }
