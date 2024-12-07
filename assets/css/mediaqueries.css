@@ -1,0 +1,84 @@
+
+@import url(./main.css);
+
+@media screen and (width > 768px) {
+
+    .header-phrase{
+        white-space: pre;
+        font-size: 1.4rem;
+    }
+
+    .header-name{
+        font-size: 2rem;
+    }
+
+    .projects-container{
+        align-items: center;
+    }
+
+    .projects-page img{
+        width: 80vw;
+        max-width: 800px;
+    }
+
+    .footer{
+        max-width: 102vw;
+    }
+
+    .made-by-footer{
+        margin: auto;
+    }
+}
+
+@media screen and (width > 1000px) {
+
+    #menu{
+        display: none;
+    }
+
+    .items-home-menu{
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        width: 30vw;
+        height: min-content;
+    }
+
+    .items-home-menu .menu-link{
+        height: min-content;
+    }
+
+    .header-content{
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (width > 1300px) {
+
+    .about-container{
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+@media screen and (width > 1600px) {
+    .project-01{
+        align-self: flex-start;
+    }
+
+    .project-02{
+        align-self: flex-end;
+    }
+
+    .project-03{
+        align-self: flex-start;
+    }
+
+    .footer{
+        max-width: 101vw;
+    }
+}

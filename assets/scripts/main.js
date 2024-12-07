@@ -1,12 +1,11 @@
 
-const menu = document.getElementById('home-menu')
+const menu = document.getElementById('menu')
 const menuItems = document.getElementById('items-home-menu')
-const menuLinks = document.getElementsByClassName('menu-link')
 
 menu.addEventListener('click', () => {
 
-
     if (menuItems.style.display === "none") {
+        menu.style.zIndex = "2"
         menuItems.style.display = "flex"
     }
     else {

@@ -16,8 +16,8 @@
     --color-menu: #000;
     --text-color: #000;
     --background-footer-icons: #1a0000;
-    --border-introduction:#000;
-    --background-menu:#fff3f369;
+    --border-introduction: #000;
+    --background-menu: #fff3f369;
 }
 
 .dark-theme {
@@ -25,10 +25,14 @@
     --background-logo: #000;
     --color-logo: #fff;
     --color-menu: #fff;
-    --text-color:#fff;
-    --background-footer-icons:#fff;
-    --border-introduction:#fff;
-    --background-menu:#fff3f369;
+    --text-color: #c5c5c5;
+    --background-footer-icons: #fff;
+    --border-introduction: #fff;
+    --background-menu: #fff3f369;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 html,
@@ -36,6 +40,15 @@ body {
     background: var(--background-color);
 }
 
+.introduction {
+    border-top: 1px solid var(--border-introduction);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-top: 1rem;
+}
 
 .home-page {
     height: 100vh;
@@ -69,32 +82,43 @@ body {
     position: relative;
 }
 
-.items-home-menu{
+.items-home-menu {
     position: absolute;
-    top: .5rem;
+    top: 0.5rem;
     left: -7rem;
-    background-color: var(--background-menu);
+    background-color: var(--background-color);
     width: 9.8rem;
-    height: 12rem;
-    padding: .6rem;
-    display: flex;
+    height: 100vh;
+    padding: 0.6rem;
     flex-direction: column;
     justify-content: center;
     display: none;
+    animation: fadeIn 0.5s;
 }
 
-.menu-link{
-    transition: all .5s;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-link {
+    transition: all 0.5s;
     margin-bottom: 1rem;
     font-weight: 500;
 }
 
-.menu-link a{
+.menu-link a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
 }
 
-.menu-link:hover{
+.menu-link:hover {
     transform: translate(2px, -4px);
 }
 
@@ -128,21 +152,12 @@ body {
     text-align: center;
 }
 
-.introduction {
-    border-top: 1px solid var(--border-introduction);
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.projects-page{
+/* Projects page estilization */
+.projects-page {
     padding: 9px;
     padding-bottom: 0px;
 }
 
-/* Projects page estilization */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -174,7 +189,7 @@ body {
 }
 
 /* Contact page estilization */
-.contact-page {
+/* .contact-page {
     height: 100vh;
     position: relative;
 }
@@ -212,32 +227,33 @@ input, textarea {
     border: none;
     border: 1px solid var(--border-introduction);
     color: var(--text-color);
-}
+} */
 
 /* About page estilization */
-.about-page{
-    padding: 16px;
+.about-page {
+    padding: 1rem;
+    margin: 3rem 0;
     display: grid;
     grid-template-columns: 1fr;
     color: var(--text-color);
 }
 
-.about-page .about-text{
+.about-page .about-text {
     text-align: justify;
 }
 
-.footer{
-    border-top: 2px solid var(--border-introduction);
+/* Footer estilization */
+.footer {
     width: 104vw;
     margin-left: -1rem;
-    padding-top: .3rem;
+    padding-top: 0.3rem;
     display: flex;
     flex-flow: row wrap;
     height: 40vh;
 }
 
 /* Footer page estilization */
-.footer-icons{
+.footer-icons {
     font-size: 2rem;
     display: flex;
     justify-content: flex-end;
@@ -245,11 +261,11 @@ input, textarea {
     color: var(--text-color);
 }
 
-.footer-icons .fa-github{
-    margin-right: .4rem;
+.footer-icons .fa-github {
+    margin-right: 0.4rem;
 }
 
-.footer-nav{
+.footer-nav {
     width: inherit;
     display: flex;
     flex-direction: column;
@@ -258,7 +274,7 @@ input, textarea {
     margin-left: 1rem;
 }
 
-.footer-links a{
+.footer-links a {
     text-decoration: none;
     font-weight: 500;
     text-transform: uppercase;
@@ -266,7 +282,7 @@ input, textarea {
     color: var(--text-color);
 }
 
-.made-by-footer{
+.made-by-footer {
     border-top: 1px solid var(--border-introduction);
     width: 85vw;
     height: 2rem;
