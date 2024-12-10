@@ -24,3 +24,28 @@ function SwitchThemes() {
         document.body.classList.remove('dark-theme')
     }
 }
+
+
+const intro = document.querySelector('.intro')
+const logoHeader = document.querySelector('.logo-header')
+const logo = document.querySelector('.logo')
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    setTimeout(() =>{
+
+        setTimeout(() => {
+            logo.classList.add('fadeIn')
+        }, 400)
+
+        setTimeout(() => {
+            logo.classList.remove('fadeIn')
+            logo.classList.add('fadeOut')
+        }, 2000)
+
+        setTimeout(() => {
+            intro.style.top = "-100vh"
+        },2300)
+    })
+
+})

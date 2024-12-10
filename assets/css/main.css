@@ -11,7 +11,7 @@
 
 .light-theme {
     --background-color: #faebdd;
-    --background-logo: #1a0000;
+    --background-logo: #000000;
     --color-logo: #fff;
     --color-menu: #000;
     --text-color: #000;
@@ -38,6 +38,50 @@ html::-webkit-scrollbar {
 html,
 body {
     background: var(--background-color);
+    transition: .7s;
+}
+
+.intro{
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    color: var(--color-logo);
+    background-color: var(--background-logo);
+    height: max-content;
+    width: 75px;
+    text-align: right;
+    font-weight: 250;
+    bottom: -50px;
+    opacity: 0;
+}
+
+.logo.fadeIn{
+    opacity: 1;
+    bottom: 0;
+    transition: ease-in-out .5s;
+}
+
+.logo.fadeOut{
+    opacity: 0;
+    bottom: 150px;
+    transition: ease-in-out .5s;
 }
 
 .introduction {
@@ -73,7 +117,7 @@ body {
 
 .home-logo-letter {
     color: var(--color-logo);
-    font-weight: 200;
+    font-weight: 250;
 }
 
 .home-menu {
