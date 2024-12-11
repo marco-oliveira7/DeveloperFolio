@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Saira", sans-serif;
+    font-weight: var(--font-weight);
 }
 
 /* Main Css*/
@@ -18,6 +19,7 @@
     --background-footer-icons: #1a0000;
     --border-introduction: #000;
     --background-menu: #fff3f369;
+    --font-weight: 400;
 }
 
 .dark-theme {
@@ -29,6 +31,20 @@
     --background-footer-icons: #fff;
     --border-introduction: #fff;
     --background-menu: #fff3f369;
+    --font-weight: 200;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all .5s;
+    transform: translateY(40px);
+}
+
+.show{
+    transform: translate(0px);
+    opacity: 1;
+    transition: all .5s;
+
 }
 
 html::-webkit-scrollbar {
@@ -68,8 +84,18 @@ body {
     width: 75px;
     text-align: right;
     font-weight: 250;
-    bottom: -50px;
+    bottom: -10px;
     opacity: 0;
+}
+
+.logo::after{
+    content: '';
+    height: 5px;
+    width: 50px;
+    background-color: #000000;
+    position: fixed;
+    top: 55px;
+    left: 26px;
 }
 
 .logo.fadeIn{
@@ -118,6 +144,7 @@ body {
 .home-logo-letter {
     color: var(--color-logo);
     font-weight: 250;
+    
 }
 
 .home-menu {
@@ -191,9 +218,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.letter{
+    font-variation-settings: "wdth" 120;
+    font-size: 3rem;
+}
+
 .header-about {
     font-weight: 500;
     text-align: center;
+}
+
+.fa-circle-half-stroke{
+    cursor: pointer;
 }
 
 /* Projects page estilization */
