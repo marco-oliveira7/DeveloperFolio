@@ -165,6 +165,7 @@ body {
     justify-content: center;
     display: none;
     animation: fadeIn 0.5s;
+    box-shadow: -2px 1px 3px var(--border-introduction);
 }
 
 @keyframes fadeIn {
@@ -267,47 +268,6 @@ body {
 .projects-button::after {
     content: " ►";
 }
-
-/* Contact page estilization */
-/* .contact-page {
-    height: 100vh;
-    position: relative;
-}
-
-#form {
-    margin-top: 2rem;
-    color: var(--text-color);
-    padding: 0.5rem 0;
-    border: 2px solid var(--border-introduction);
-}
-
-.form-flex {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    text-align: center;
-}
-
-label:nth-child(1){
-    margin-top: .3rem;
-}
-
-input, textarea {
-    align-self: center;
-    margin-bottom: 1.4rem;
-}
-
-.form-button{
-    padding: .4rem .7rem;
-    display: block;
-    margin: auto;
-    background-color: transparent;
-    border: none;
-    border: 1px solid var(--border-introduction);
-    color: var(--text-color);
-} */
 
 /* About page estilization */
 .about-page {

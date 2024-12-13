@@ -28,6 +28,10 @@
     .made-by-footer{
         margin: auto;
     }
+
+    #form{
+        width: 614px;
+    }
 }
 
 @media screen and (width > 1000px) {
@@ -44,6 +48,7 @@
         position: relative;
         width: 30vw;
         height: min-content;
+        box-shadow: none
     }
 
     .items-home-menu .menu-link{
@@ -54,6 +59,8 @@
         margin: 0;
         margin-top: 2rem;
     }
+
+
 
 }
 
